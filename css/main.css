@@ -1421,7 +1421,7 @@ form {
     .footer-bottom{
         align-items: start;
         flex-direction: column;
-        gap: 10px;
+        gap: 20px;
         padding-top: 0;
         padding-bottom: 25px;
     }
