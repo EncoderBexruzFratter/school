@@ -31,7 +31,10 @@ body {
 }
 
 .header-logo-link {
-    display: flex;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 28px;
+    font-weight: 700;
 }
 
 .header-logo {
@@ -62,6 +65,8 @@ body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.331), rgba(0, 0, 0, 0.422)), url(../img/hero-2-cover.png);
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
 }
 
 .hero-container {
@@ -123,7 +128,7 @@ body {
 }
 
 .hidden {
-    width: 60%;
+    width: 75%;
     height: 100vh;
     position: fixed;
     top: 0;
@@ -281,6 +286,7 @@ body {
 
 .education-card {
     max-width: 315px;
+    min-height: 352px;
     width: 100%;
     padding: 35px 40px 35px 40px;
     box-shadow: 0px 13px 19px 0px rgba(0, 0, 0, 0.07);
@@ -615,7 +621,6 @@ body {
 
 .packages-bottom {
     display: flex;
-    align-items: center;
     gap: 10px;
 }
 
@@ -865,7 +870,7 @@ body {
 
 .teacher-title-2 {
     color: rgb(37, 43, 66);
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 700;
     line-height: 50px;
 }
@@ -1037,7 +1042,7 @@ body {
 
 .quality-title-2 {
     color: rgb(37, 43, 66);
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 700;
     line-height: 50px;
 }
@@ -1172,7 +1177,7 @@ body {
 }
 
 .newsletter-top {
-    max-width: 469px;
+    max-width: 599px;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -1197,6 +1202,7 @@ body {
 }
 
 .newsletter-text {
+    max-width: 469px;
     color: rgb(115, 115, 115);
     font-size: 14px;
     font-weight: 400;
@@ -1213,7 +1219,8 @@ body {
 
 form {
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .inp-email {
@@ -1234,18 +1241,22 @@ form {
 }
 
 .subs_btn {
-    max-width: 117px;
     width: 100%;
     height: 58px;
     border: 1px solid rgb(230, 230, 230);
-    border-radius: 0px 5px 5px 0px;
+    border-radius: 5px 5px 5px 5px;
     background: rgb(255, 101, 81);
     color: rgb(255, 255, 255);
     font-size: 14px;
     font-weight: 400;
     line-height: 28px;
+    border: 2px solid rgb(255, 101, 81);
+    transition: all .3s;
 }
-
+.subs_btn:hover{
+    background-color: transparent;
+    color: rgb(37, 43, 66);
+}
 @media(max-width:768px) {
     .newletter {
         padding-top: 100px;
